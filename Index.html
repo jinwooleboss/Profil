@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amoussan - Portfolio</title>
+<meta name="description" content="First-year MIAGE student in Abidjan, future software developer.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2317375e'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' font-family='Georgia,serif' fill='%23f6f5f1'%3EA%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f5f1;--ink:#1b1f24;--muted:#5b636d;--line:#d9d6cc;--accent:#17375e;--accent-ink:#f6f5f1;--ph:#fff3c4;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181d;--ink:#e9e7e0;--muted:#98a0aa;--line:#2b323a;--accent:#8fb0dc;--accent-ink:#14181d;--ph:#4a4220}}
+:root[data-theme="dark"]{--bg:#14181d;--ink:#e9e7e0;--muted:#98a0aa;--line:#2b323a;--accent:#8fb0dc;--accent-ink:#14181d;--ph:#4a4220}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:baseline;padding-top:1rem;padding-bottom:1rem;gap:1rem;flex-wrap:wrap}
+.brand{font:700 1.1rem Georgia,"Iowan Old Style",serif;color:var(--ink);text-decoration:none}
+nav a{margin-left:1.25rem;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink);text-decoration:underline}
+h1,h2{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.2rem,7vw,3.6rem);letter-spacing:-.01em}
+h2{font-size:1.6rem;margin-bottom:1rem}
+h3{font-size:1.05rem;margin:0 0 .25rem}
+section{padding:3rem 0;border-bottom:1px solid var(--line)}
+.lead{font-size:1.2rem;color:var(--muted);margin:.75rem 0 0;max-width:36rem}
+.meta{color:var(--muted);margin-top:.5rem}
+.btn{display:inline-block;padding:.7rem 1.1rem;border-radius:3px;border:1.5px solid var(--accent);background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;margin:1.5rem .75rem 0 0}
+.btn.alt{background:transparent;color:var(--accent)}
+.ph{background:var(--ph);padding:0 .2em}
+ul.skills{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.5rem 1.5rem}
+ul.skills li{border-top:1px solid var(--line);padding:.5rem 0}
+.proj{display:grid;gap:1.5rem}
+.proj article{border-left:3px solid var(--accent);padding-left:1rem}
+.proj p{margin:.25rem 0}
+.view{display:none}.view.on{display:block}
+.legal h2{font-size:1.2rem;margin-top:2rem}
+footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
+footer a{margin-right:1rem}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#/">Amoussan</a>
+  <nav aria-label="Main navigation"><a href="#/" data-jump="apropos">About</a><a href="#/" data-jump="competences">Skills</a><a href="#/" data-jump="contact">Contact</a></nav>
+</div></header>
+<main>
+<div id="home" class="view on">
+  <div class="wrap">
+    <section id="top">
+      <h1>Amoussan</h1>
+      <p class="lead">Forestière MIAGE | Future software developer</p>
+      <p class="meta">Abidjan, Côte d'Ivoire</p>
+      <a class="btn" href="#contact" data-jump="contact">Contact me</a>
+      <a class="btn alt" href="#competences" data-jump="competences">See my skills</a>
+    </section>
+    <section id="apropos">
+      <h2>About</h2>
+      <p>I am Amoussan, an 18-year-old first-year MIAGE student. I would like to become a software developer in the future. I chose this program because I love computer science and the field really interests me.</p>
+      <p>It is my first year, so I am still discovering a lot of things, but I enjoy learning and am motivated by what I do. I am happy with my choice of program and really want to advance in this field.</p>
+      <p>My goal is to become a skilled developer and eventually work for a tech company with a good salary. To achieve this, I know I need to learn, practice, and, above all, not give up.</p>
+    </section>
+    <section id="competences">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li><li>French / English</li><li>Computer skills</li><li>Excel</li><li>Telegram bots</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Write to me at <a href="mailto:nanic7768@gmail.com">nanic7768@gmail.com</a>.</p>
+      <p><a href="#" class="ph">[LinkedIn link]</a> &nbsp; <a href="#" class="ph">[GitHub link]</a></p>
+    </section>
+  </div>
+</div>
+<div id="confidentialite" class="view legal">
+  <div class="wrap">
+    <section>
+      <h1>Privacy policy</h1>
+      <p class="meta">Last updated: <span class="ph">[date]</span></p>
+      <h2>Who is responsible for this site</h2>
+      <p>Amoussan, reachable at <a href="mailto:nanic7768@gmail.com">nanic7768@gmail.com</a>.</p>
+      <h2>Data collected</h2>
+      <p>This site sets no tracking cookies and uses no analytics tool. The only data I receive is what you send me yourself by email. <span class="ph">[Edit this paragraph if you add a form or a statistics tool.]</span></p>
+      <h2>How data is used</h2>
+      <p>Messages are used only to reply to you. They are not sold or shared with third parties.</p>
+      <h2>Retention</h2>
+      <p><span class="ph">[Say how long you keep emails.]</span></p>
+      <h2>Your rights</h2>
+      <p>You can ask to access, correct or delete your data by writing to the address above.</p>
+      <h2>Hosting</h2>
+      <p>This site is hosted by <span class="ph">[host name, address]</span>.</p>
+    </section>
+  </div>
+</div>
+<div id="cgu" class="view legal">
+  <div class="wrap">
+    <section>
+      <h1>Terms of use</h1>
+      <p class="meta">Last updated: <span class="ph">[date]</span></p>
+      <h2>Purpose</h2>
+      <p>This site presents the background and projects of Amoussan. By browsing it, you accept these terms.</p>
+      <h2>Intellectual property</h2>
+      <p>Texts, images and projects shown here belong to their author unless stated otherwise. Any reproduction requires written permission.</p>
+      <h2>Liability</h2>
+      <p>I try to keep the information up to date but cannot guarantee it is accurate. I am not responsible for the content of sites this site links to.</p>
+      <h2>Contact</h2>
+      <p><a href="mailto:nanic7768@gmail.com">nanic7768@gmail.com</a></p>
+      <h2>Applicable law</h2>
+      <p><span class="ph">[Country whose law applies.]</span></p>
+    </section>
+  </div>
+</div>
+</main>
+<footer><div class="wrap">
+  <a href="#/confidentialite">Privacy policy</a><a href="#/cgu">Terms of use</a>
+  <p>&copy; <span class="ph">[year]</span> Amoussan</p>
+</div></footer>
+<script>
+(function(){
+  var views={home:document.getElementById('home'),confidentialite:document.getElementById('confidentialite'),cgu:document.getElementById('cgu')};
+  function show(name,anchor){
+    for(var k in views){views[k].classList.toggle('on',k===name)}
+    if(anchor){var el=document.getElementById(anchor);if(el)el.scrollIntoView()}else{window.scrollTo(0,0)}
+  }
+  function route(){
+    var h=location.hash;
+    if(h==='#/confidentialite')show('confidentialite');
+    else if(h==='#/cgu')show('cgu');
+    else show('home',null);
+  }
+  window.addEventListener('hashchange',route);
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-jump]');
+    if(!a)return;
+    e.preventDefault();
+    show('home',a.getAttribute('data-jump'));
+  });
+  route();
+})();
+</script>
+</body>
+  </html>
