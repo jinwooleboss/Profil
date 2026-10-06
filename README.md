@@ -1,6 +1,6 @@
 # Amoussan
 
-Forestière MIAGE | Future software developer
+ETUDIANT MIAGE | Future software developer
 
 Abidjan, Côte d'Ivoire
 
@@ -23,3 +23,5 @@ My goal is to become a skilled developer and eventually work for a tech company 
 ## Contact
 
 Email: nanic7768@gmail.com
+
+GitHub: https://github.com/jinwooleboss
