@@ -5,14 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Amoussan - Portfolio</title>
 <meta name="description" content="First-year MIAGE student in Abidjan, future software developer.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2317375e'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' font-family='Georgia,serif' fill='%23f6f5f1'%3EA%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0e6655">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amoussan - Portfolio">
+<meta property="og:description" content="First-year MIAGE student in Abidjan, future software developer.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Amoussan","email":"mailto:nanic7768@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Abidjan","addressCountry":"CI"},"sameAs":["https://github.com/jinwooleboss"]}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e6655'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' font-family='Georgia,serif' fill='%23f6f5f1'%3EA%3C/text%3E%3C/svg%3E">
 <style>
 :root{
-  --bg:#f6f5f1;--ink:#1b1f24;--muted:#5b636d;--line:#d9d6cc;--accent:#17375e;--accent-ink:#f6f5f1;--ph:#fff3c4;
+  --bg:#f6f5f1;--ink:#1b1f24;--muted:#5b636d;--line:#d9d6cc;--accent:#0e6655;--accent-ink:#f6f5f1;--ph:#fff3c4;--accent2:#d4581f;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181d;--ink:#e9e7e0;--muted:#98a0aa;--line:#2b323a;--accent:#8fb0dc;--accent-ink:#14181d;--ph:#4a4220}}
-:root[data-theme="dark"]{--bg:#14181d;--ink:#e9e7e0;--muted:#98a0aa;--line:#2b323a;--accent:#8fb0dc;--accent-ink:#14181d;--ph:#4a4220}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181d;--ink:#e9e7e0;--muted:#98a0aa;--line:#2b323a;--accent:#5fc2a8;--accent-ink:#14181d;--ph:#4a4220;--accent2:#f0925c}}
+:root[data-theme="dark"]{--bg:#14181d;--ink:#e9e7e0;--muted:#98a0aa;--line:#2b323a;--accent:#5fc2a8;--accent-ink:#14181d;--ph:#4a4220;--accent2:#f0925c}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -44,19 +49,80 @@ ul.skills li{border-top:1px solid var(--line);padding:.5rem 0}
 footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
 footer a{margin-right:1rem}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+nav a{margin:0;padding:.35rem 0}
+#top{padding:4.5rem 0 3.5rem}
+.lead{border-left:3px solid var(--accent);padding-left:1rem;color:var(--ink);font-size:1.25rem;margin-top:1.25rem}
+h2::before{content:"";display:block;width:2.5rem;height:3px;background:var(--accent);margin-bottom:.9rem}
+#apropos p{max-width:38rem;line-height:1.75}
+ul.skills li{border:1px solid var(--line);border-radius:3px;padding:.7rem 1rem;font-weight:600}
+.edu{display:grid;gap:1.25rem}
+.edu article{border:1px solid var(--line);border-radius:3px;padding:1rem 1.1rem}
+.edu p{margin:.15rem 0}
+.btn{min-height:44px}
+@media (max-width:520px){
+  body{font-size:16px}
+  #top{padding:2.75rem 0 2.5rem}
+  section{padding:2.25rem 0}
+  .btn{display:block;text-align:center;margin:1rem 0 0}
+  header.top .wrap{flex-direction:column;gap:.25rem}
+}
+
+a{text-underline-offset:3px}
+::selection{background:var(--accent);color:var(--accent-ink)}
+header.top .wrap{max-width:62rem}
+.brand{letter-spacing:.01em}
+h3{font-weight:700}
+.edu article,ul.skills li{background:color-mix(in srgb,var(--bg) 92%,var(--ink) 8%)}
+@media (min-width:860px){
+  #home .wrap{max-width:62rem;display:grid;grid-template-columns:17rem 1fr;column-gap:4.5rem;align-items:start}
+  #top{grid-column:1;grid-row:1 / span 4;position:sticky;top:2rem;padding:3.5rem 0;border-bottom:0}
+  #home section:not(#top){grid-column:2}
+  #home section#apropos{padding-top:3.5rem}
+  #home section#contact{border-bottom:0}
+  #top h1{font-size:2.5rem}
+  #top .lead{font-size:1.05rem}
+  #top .btn{display:block;text-align:center;margin:.75rem 0 0}
+}
+
+h2::before{background:var(--accent2)}
+.lead{border-left-color:var(--accent2)}
+ul.skills li{border-left:4px solid var(--accent2)}
+.edu article{border-top:4px solid var(--accent)}
+.btn:hover{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.btn.alt:hover{background:transparent;color:var(--accent2)}
+
+.tbtn{font:inherit;font-size:.95rem;background:transparent;color:var(--accent);border:1.5px solid var(--accent);border-radius:3px;padding:.3rem .75rem;cursor:pointer;min-height:36px}
+.tbtn:hover{color:var(--accent2);border-color:var(--accent2)}
+nav{align-items:center}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:1rem;top:1rem;background:var(--bg);color:var(--ink);padding:.5rem .8rem;z-index:10;border:2px solid var(--accent)}
+.copy-note{margin-left:.6rem;color:var(--muted);font-size:.95rem}
+@media print{
+  header.top,footer,.btn,.tbtn,.skip{display:none!important}
+  body{background:#fff;color:#000;font-size:12pt}
+  #home .wrap{display:block!important;max-width:none}
+  #top{position:static!important}
+  section{padding:1rem 0;break-inside:avoid}
+}
+
+nav a[aria-current="true"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent2);text-decoration-thickness:2px;text-underline-offset:6px}
+#contact .tbtn{margin:.25rem .5rem .25rem 0}
 </style>
 </head>
 <body>
+<a class="skip" href="#main" data-jump="main">Skip to content</a>
 <header class="top"><div class="wrap">
   <a class="brand" href="#/">Amoussan</a>
-  <nav aria-label="Main navigation"><a href="#/" data-jump="apropos">About</a><a href="#/" data-jump="competences">Skills</a><a href="#/" data-jump="contact">Contact</a></nav>
+  <nav aria-label="Main navigation"><a href="#/" data-jump="apropos">About</a><a href="#/" data-jump="formation">Education</a><a href="#/" data-jump="competences">Skills</a><a href="#/" data-jump="contact">Contact</a><button id="theme" type="button" class="tbtn" aria-label="Switch color theme">Dark mode</button></nav>
 </div></header>
-<main>
+<main id="main">
 <div id="home" class="view on">
   <div class="wrap">
     <section id="top">
       <h1>Amoussan</h1>
-      <p class="lead">Forestière MIAGE | Future software developer</p>
+      <p class="lead">ETUDIANT MIAGE | Future software developer</p>
       <p class="meta">Abidjan, Côte d'Ivoire</p>
       <a class="btn" href="#contact" data-jump="contact">Contact me</a>
       <a class="btn alt" href="#competences" data-jump="competences">See my skills</a>
@@ -67,6 +133,18 @@ footer a{margin-right:1rem}
       <p>It is my first year, so I am still discovering a lot of things, but I enjoy learning and am motivated by what I do. I am happy with my choice of program and really want to advance in this field.</p>
       <p>My goal is to become a skilled developer and eventually work for a tech company with a good salary. To achieve this, I know I need to learn, practice, and, above all, not give up.</p>
     </section>
+    <section id="formation">
+      <h2>Education</h2>
+      <div class="edu">
+        <article>
+          <h3>Licence 1 MIAGE</h3>
+          <p>ETUDIANT MIAGE, Abidjan, Côte d'Ivoire</p>
+          <p class="meta">First year</p>
+        </article>
+      </div>
+      <h3 style="margin-top:2rem">Certificates</h3>
+      <p>N/D</p>
+    </section>
     <section id="competences">
       <h2>Skills</h2>
       <ul class="skills">
@@ -75,7 +153,7 @@ footer a{margin-right:1rem}
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <p>Write to me at <a href="mailto:nanic7768@gmail.com">nanic7768@gmail.com</a>.</p>
+      <p>Write to me at <a href="mailto:nanic7768@gmail.com">nanic7768@gmail.com</a>. <button id="copy" type="button" class="tbtn">Copy email</button> <button id="vcard" type="button" class="tbtn">Save contact</button><span id="copynote" class="copy-note" role="status"></span></p>
       <p><a href="#" class="ph">[LinkedIn link]</a> &nbsp; <a href="https://github.com/jinwooleboss">GitHub</a></p>
     </section>
   </div>
@@ -120,7 +198,7 @@ footer a{margin-right:1rem}
 </div>
 </main>
 <footer><div class="wrap">
-  <a href="#/confidentialite">Privacy policy</a><a href="#/cgu">Terms of use</a>
+  <a href="#/confidentialite">Privacy policy</a><a href="#/cgu">Terms of use</a><a href="#/" data-jump="top">Back to top</a>
   <p>&copy; 2026 Amoussan</p>
 </div></footer>
 <script>
@@ -144,6 +222,58 @@ footer a{margin-right:1rem}
     show('home',a.getAttribute('data-jump'));
   });
   route();
+})();
+
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  function dark(){var t=root.getAttribute('data-theme');return t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches}
+  function label(){btn.textContent=dark()?'Light mode':'Dark mode'}
+  try{var saved=localStorage.getItem('theme');if(saved)root.setAttribute('data-theme',saved)}catch(e){}
+  label();
+  btn.addEventListener('click',function(){
+    var next=dark()?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next)}catch(e){}
+    label();
+  });
+  var copy=document.getElementById('copy'),note=document.getElementById('copynote');
+  copy.addEventListener('click',function(){
+    var email='nanic7768@gmail.com';
+    function done(m){note.textContent=m;setTimeout(function(){note.textContent=''},2500)}
+    try{navigator.clipboard.writeText(email).then(function(){done('Copied')},function(){done(email)})}catch(e){done(email)}
+  });
+})();
+
+(function(){
+  var v=document.getElementById('vcard');
+  v.addEventListener('click',function(){
+    var lines=['BEGIN:VCARD','VERSION:3.0','FN:Amoussan','N:;Amoussan;;;','EMAIL:nanic7768@gmail.com','URL:https://github.com/jinwooleboss','ADR;TYPE=HOME:;;;Abidjan;;;C\u00f4te d\'Ivoire','END:VCARD'];
+    var blob=new Blob([lines.join('\r\n')],{type:'text/vcard;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);a.download='amoussan.vcf';
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+  });
+  if(!('IntersectionObserver' in window))return;
+  var links={};
+  document.querySelectorAll('nav a[data-jump]').forEach(function(l){links[l.getAttribute('data-jump')]=l});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var l=links[e.target.id];if(!l)return;
+      if(e.isIntersecting){
+        Object.keys(links).forEach(function(k){links[k].removeAttribute('aria-current')});
+        l.setAttribute('aria-current','true');
+      }else if(l.getAttribute('aria-current')==='true'&&!document.getElementById('home').classList.contains('on')){
+        l.removeAttribute('aria-current');
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(links).forEach(function(k){var el=document.getElementById(k);if(el)io.observe(el)});
+  window.addEventListener('hashchange',function(){
+    if(!document.getElementById('home').classList.contains('on')){
+      Object.keys(links).forEach(function(k){links[k].removeAttribute('aria-current')});
+    }
+  });
 })();
 </script>
 </body>
